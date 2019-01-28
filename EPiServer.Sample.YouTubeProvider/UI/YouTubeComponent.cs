@@ -10,7 +10,7 @@ namespace EPiServer.Sample.YouTubeProvider.UI
     public class YouTubeComponent : ComponentDefinitionBase
     {
         public YouTubeComponent()
-			: base("epi-cms.component.Media")
+			: base("epi-cms/component/Media")
         {
             Categories = new [] { "content" };
             Title = "YouTube";
