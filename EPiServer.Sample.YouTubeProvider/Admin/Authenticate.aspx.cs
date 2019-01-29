@@ -107,7 +107,7 @@ namespace EPiServer.Sample.YouTubeProvider.Admin
 			    var timeSpan = new TimeSpan(0, 0, (int) (CurrentSettings.TokenExpires - DateTime.Now.Subtract(CurrentSettings.TokenCreated).TotalSeconds));
 			    if (timeSpan.TotalMilliseconds < 0)
 				    return "Expired";
-			    return string.Format("{0} minutes ans {1} seconds", timeSpan.Minutes, timeSpan.Seconds);
+			    return string.Format("{0} minutes and {1} seconds", timeSpan.Minutes, timeSpan.Seconds);
 		    }
 	    }
 
